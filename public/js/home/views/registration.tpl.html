@@ -1,0 +1,55 @@
+<div class="row" ng-controller="RegCtrl">
+  <div layout="column" flex id="content" role="main">
+    <md-content layout-padding>
+      <div layout="row" layout-align="center center" layout-fill>
+        <md-whiteframe class="md-whiteframe-z1" layout="column" flex="50" layout-padding>
+          <md-content layout-padding>
+            <form name="LoginForm" ng-submit="doRegister()">
+              <md-input-container class="md-block" flex-gt-xs>
+                <label>First name</label>
+                <input name="name" ng-model="regData.name" required>
+                <div ng-messages="regData.name.$dirty" role="alert">
+                  <div ng-message="required" class="my-message">Name required</div>
+                </div>
+              </md-input-container>
+              <md-input-container class="md-block" flex-gt-xs>
+                <label>Last name</label>
+                <input name="lastname" ng-model="regData.lastname" required>
+                <div ng-messages="regData.lastname.$dirty" role="alert">
+                  <div ng-message="required" class="my-message">Last name required</div>
+                </div>
+              </md-input-container>
+              <md-input-container class="md-block" flex-gt-xs>
+                <label>Username</label>
+                <input name="username" ng-model="regData.username" required>
+                <div ng-messages="regData.username.$dirty" role="alert">
+                  <div ng-message="required" class="my-message">Username required</div>
+                </div>
+              </md-input-container>
+              <md-input-container class="md-block" flex-gt-xs>
+                <label>Password</label>
+                <input name="password" ng-model="regData.password" type="password" required>
+                <div ng-messages="regData.password.$dirty" role="alert">
+                  <div ng-message="required" class="my-message">Password required</div>
+                </div>
+              </md-input-container>
+              <md-input-container class="md-block" flex-gt-xs>
+                <label>Confirm Password</label>
+                <input name="passwordConfirm" type="password" required>
+                <div ng-messages="regData.password.$dirty" role="alert">
+                  <div ng-message="required" class="my-message">Password not match</div>
+                </div>
+              </md-input-container>
+              <md-input-container layout-align="center center">
+                <div layout="row" layout-sm="column" layout-margin>
+                  <md-button class="md-raised md-primary" flex="50" flex-sm="100" type="submit">Register</md-button>
+                  <md-button class="md-raised" flex="50" flex-sm="100" ui-sref="login">Sign in</md-button>
+                </div>
+              </md-input-container>
+            </form>
+          </md-content>
+        </md-whiteframe>
+      </div>
+    </md-content>
+  </div>
+</div>

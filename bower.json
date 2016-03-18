@@ -1,0 +1,14 @@
+{
+  "name": "diplomka",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "angular": "~1.4.6",
+    "bootstrap": "~3.3.5",
+    "lodash": "^4.2.1"
+  }
+}

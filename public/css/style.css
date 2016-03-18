@@ -1,0 +1,50 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+.container-fluid {
+  padding: 0; }
+
+div {
+  height: 100%; }
+
+.box3, .box2, .box1 {
+  display: flex;
+  box-sizing: border-box;
+  min-width: 100%; }
+
+.box1 {
+  height: 100%;
+  flex: 1 1 70%; }
+
+.box2 {
+  height: 20px; }
+
+.box3 {
+  height: 30%;
+  max-height: 30%;
+  flex: 1 1 30%; }
+
+.header-main {
+  background-color: black; }
+
+.sidebar {
+  background-color: #8a8a8a; }
+
+.sidebar-nav {
+  color: black; }
+
+.sidebar-nav:hover {
+  color: white; }
+
+.subheader {
+  background-color: #8a8a8a; }
+
+.subheader-main {
+  background-color: #8a8a8a; }
+
+.alert-content {
+  margin: 0 auto;
+  margin-top: 50px; }

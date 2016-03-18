@@ -1,0 +1,34 @@
+<div class="row" ng-controller="LoginCtrl">
+  <div layout="column" flex id="content" role="main">
+    <md-content layout-padding>
+      <div layout="row" layout-align="center center" layout-fill>
+        <md-whiteframe class="md-whiteframe-z1" layout="column" flex="40" layout-padding>
+          <md-content layout-padding>
+            <form name="LoginForm" ng-submit="doLogin()">
+              <md-input-container class="md-block" flex-gt-xs>
+                <label>Username</label>
+                <input name="username" ng-model="loginData.username" required>
+                <div ng-messages="LoginForm.username.$dirty" role="alert">
+                  <div ng-message="required" class="my-message">Username required</div>
+                </div>
+              </md-input-container>
+              <md-input-container class="md-block" flex-gt-xs>
+                <label>Password</label>
+                <input name="password" ng-model="loginData.password" type="password" required>
+                <div ng-messages="LoginForm.password.$dirty" role="alert">
+                  <div ng-message="required" class="my-message">Password required</div>
+                </div>
+              </md-input-container>
+              <md-input-container layout-align="center center">
+                <div layout="row" layout-sm="column" layout-margin>
+                  <md-button class="md-raised" flex="50" flex-sm="100" type="submit">Login</md-button>
+                  <md-button class="md-raised md-primary" flex="50" flex-sm="100" ui-sref="registration">Register</md-button>
+                </div>
+              </md-input-container>
+            </form>
+          </md-content>
+        </md-whiteframe>
+      </div>
+    </md-content>
+  </div>
+</div>
