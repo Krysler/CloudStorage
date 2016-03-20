@@ -1,4 +1,4 @@
-angular.module('diplomka', ['ui.router', 'ngMaterial']).
+angular.module('diplomka', ['ui.router', 'ngMaterial', 'ngAria', 'ngAnimate', 'ngMessages']).
 config(function ($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise("/login");
   $stateProvider.
